@@ -1,0 +1,25 @@
+{% extends 'layout.html'%}
+{%block head %}
+    <style media="screen">
+    table {
+    border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    </style>
+{% endblock%}
+{% block body %}
+    <table>
+      <tr>
+        <th> Title  </th>
+        <th> Post  </th>
+      </tr>
+      {% for post in data1 %}
+      <tr>
+        <td>{{ post['title'] }} </td>
+        <td>{{ post['body'] }}</td>
+      </tr>
+       {% endfor %}
+    </table>
+{% endblock %}

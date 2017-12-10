@@ -1,0 +1,6 @@
+{% extends 'layout.html'%}
+{% block body %}
+{% for author in data %}
+     <p>{{ author['name'] }} </p>
+ {% endfor %}
+{% endblock %}
